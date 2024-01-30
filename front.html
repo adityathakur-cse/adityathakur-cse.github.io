@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Home page</title> 
+        <style>
+            * {
+                scroll-behavior: smooth;
+                list-style: none;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+            }
+           .navbar {
+                background-color:rgb(118, 15, 15) ;     
+                border-radius: 0px;
+                display: flex;
+           }
+           .navbar ul{
+            overflow: auto;
+           }
+           .navbar li {
+            float: left;
+            margin: 8px 30px;                                
+           }
+           .navbar li a {
+            padding: 8px 2px; 
+            text-decoration: none;
+            color: whitesmoke;
+            }
+            ul li ul.dropdown li{
+                display: block;
+            }
+            ul li ul.dropdown {
+                width: 100%;
+                background-color: blueviolet;
+                position: absolute;
+
+                display: none;
+            }
+            .navbar ul li:hover ul.dropdown {
+                display: block;
+            }
+            .img {        
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;  
+            }
+            marquee {
+                background-color: #011F5B;
+                color: whitesmoke;
+            }
+            label {
+                font-size: 56px;
+                color: #3D0C02;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                background-color: #FF8C00;
+            }
+            .nav {
+                background-color:rgb(217, 216, 216);
+                display: flex;
+                justify-content: right;
+           }
+           .nav ul{
+            overflow: auto;
+           }
+           .nav li {
+            float: right;
+            list-style: none;   
+            margin: 8px 30px;                     
+           }
+           .nav li a {
+            padding: 8px 2px; 
+            text-decoration: none;
+            color:rgb(81, 81, 81);
+            }
+            .nav li a:hover{
+                color: blueviolet;
+                transform: translateY(-5px);
+            }  
+            .re {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                text-decoration: none;
+            }
+            .re:hover {
+                transform: translateY(-8px);
+            }
+            .ab {
+                display: inline-table;
+                flex-wrap: wrap;
+                text-align: center;
+                margin: 10px;
+                justify-content: space-around;
+                background-color:#3D0C02;
+                color: whitesmoke;
+                }
+            .ab a{
+                text-decoration: none;
+                border: 1px solid rgb(54, 54, 234);
+                background-color: rgb(54, 54, 234);
+                color: whitesmoke;
+                border-radius: 20px;
+            }
+            .ab a:hover{
+                background-color: #ff920e;
+                border: 2px solid #ff920e ;                
+            }
+            .ab img{
+                border-radius: 15px;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+            }
+            .con {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                text-decoration: none;
+                margin: 40px;
+            }
+            .container {
+                display: inline-table;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background-color:black;
+                color: whitesmoke;
+                border-radius: 15px;
+                padding: 40px;
+                height: 350px;
+                width: 400px;
+                }
+            .container img{
+                border-radius: 50px;
+            }
+            .checked {
+                color: orange;
+            }
+            li a {
+                position: relative;
+              }
+            li a:before {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                height: 4px;
+                width: 0;
+                background: white;
+                border-radius: 50px;
+                transition: width 0.2s ease;
+            }
+            li a:hover::before{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <label>&nbsp;CAR MANIA&nbsp;</label>
+                <ul>
+                    <li><a href="front.html">HOME</a></li>
+                    <li><a href="">EXPLORE</a>
+                    <ul class="dropdown">
+                        <li><a href="suv.html">SUV</a></li>
+                        <li><a href="lux-suv.html">Luxuary SUV</a></li>
+                        <li><a href="sedan.html">Sedan</a></li>
+                        <li><a href="llux-sedan.html">Luxuary Sedan</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="">FUEL</a>
+                    <ul class="dropdown">
+                        <li><a href="petrol.html">Petrol</a></li>
+                        <li><a href="cng.html">CNG</a></li>
+                        <li><a href="diesel.html">Diesel</a></li>
+                        <li><a href="electric.html">Electric</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="us.html">ABOUT US</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1><marquee scrollamount="13" direction="left">DRIVE WITH CONFIDENCE! Rent your favourite car and explore hassle free travel. &#128664;&#128513;</marquee></h1>
+        <div class="img">
+            <img src="https://i.pinimg.com/564x/98/76/48/9876486843bdf6c4ca8905dfc93fff43.jpg">
+        </div><br><br>
+        <nav class="nav">
+            <ul>
+                <li><a href="imgofcar.html">IMAGE</a></li>
+                <li><a href="https://www.cartrade.com/360-view/" target="_blank">360<sup>o</sup> VIEW</a></li>
+                <li><a href="Review.html">REVIEWS</a></li>
+            </ul>
+        </nav>
+        <div class="recommend">
+            <h3>RECOMMENDED FOR YOU</h3>
+            <h1>Explore Out Top Deals</h1> <br>           
+        </div>
+        <div class="re">
+            <div class="ab"><img src="https://spn-mda.spinny.com/img/xAt36vOAT%2BSD8H%2BN7DRprw/mobile/file.JPG?w=300&dpr=1.3" ><br><b>Toyota Legender</b>&nbsp;<lavel style="color: rgb(158, 158, 255); font-size: small;">30,000 / day</lavel><hr>
+                <a href="rent.html">&nbsp;&nbsp;&nbsp;Rent Now&nbsp;&nbsp;&nbsp;</a><br>.
+            </div>
+            <div class="ab"><img src="https://spn-mda.spinny.com/img/5Y52%2B990R6WEflTWXNgW%2BQ/mobile/file.JPG?w=300&dpr=1.3"><br><b>Honda City</b>&nbsp;<lavel style="color: rgb(158, 158, 255); font-size: small;">8,000 / day</lavel><hr>
+                <a href="rent.html">&nbsp;&nbsp;&nbsp;Rent Now&nbsp;&nbsp;&nbsp;</a><br>.
+            </div>
+            <div class="ab"><img src="https://spn-mda.spinny.com/img/_q6ZGFjzQ7Go6gKbkZYMNw/mobile/file.JPG?w=300&dpr=1.3"><br><b>Scorpio N</b>&nbsp;<lavel style="color: rgb(158, 158, 255); font-size: small;">15,000 / day</lavel><hr>
+            <a href="rent.html">&nbsp;&nbsp;&nbsp;Rent Now&nbsp;&nbsp;&nbsp;</a><br>.
+            </div>
+        </div>
+        <h2><a href="suv.html">Explore More&#8594;</a></h2><br><hr><br>
+        <div class="review">
+            <h2 style="color: orangered;">REVIEW</h2>
+            <h1>What Our Customer Say's</h1><br>
+        </div>
+        <div class="con">
+            <div class="container"><br><img src="https://i.pinimg.com/564x/11/e9/b2/11e9b2816f50daf5994f14d6739bbf8b.jpg" height="100px" width="100px"><br>Aditya<br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span><br>It was a great experience using your service, the whole process from booking to receving the vehical was very simple and smooth.</div>
+            <div class="container"><br><img src="https://i.pinimg.com/564x/d8/19/4f/d8194fcedc2f2e630eca12f1c054851b.jpg" height="100px" width="100px"><br>Bhanu<br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><br>It was a great experience using your service, the whole process from booking to receving the vehical was very simple and smooth.</div>
+            <div class="container"><br><img src="https://i.pinimg.com/564x/73/7a/90/737a9051311fd6168d7b81064359b527.jpg" height="100px" width="100px"><br>Devraj<br><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span><br>It was a great experience using your service, the whole process from booking to receving the vehical was very simple and smooth.</div>
+        </div>
+        <div class="copyright" style="text-align: left;"><h3>&#169;All rights reserved carmania@2023</h3></div>
+    </body>
+</html>
